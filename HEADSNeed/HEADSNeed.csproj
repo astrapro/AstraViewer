@@ -1,0 +1,1178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD6FC07F-084C-42C0-A6AC-CDB4332BB2CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HEADSNeed</RootNamespace>
+    <AssemblyName>HEADSNeed</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\HeadsViewer\vdres\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AKSHASP, Version=1.1.239.0, Culture=neutral, PublicKeyToken=05b7b959d7ced269">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HeadsViewer\AKSHASP.dll</HintPath>
+    </Reference>
+    <Reference Include="AxVDgridLib, Version=6.6026.0.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="AxVDrawLib5, Version=6.6026.0.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HeadsViewer\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HeadsViewer\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HeadsViewer\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenVDF, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="RenderFormats, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="vdCommandLine, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="vdDXF, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="vdFramedControl, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VDgridLib, Version=6.6026.0.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VdProControl, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="vdPropertyGrid, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VDrawBaseControl, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VDrawI5, Version=6.6026.0.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VDrawLib5, Version=6.6026.0.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VdrawPro5, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="vdScrollableControl, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="vdxFcnv, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.Actions, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.ExDialogs, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.Fonts, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.Generics, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.Geometry, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.Professional, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.Render, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="VectorDraw.Serialize, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+    <Reference Include="WinMsgMannager, Version=6.6026.1.0, Culture=neutral, PublicKeyToken=54eac14e23c9ee53, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ALIGN\Alignment.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\ASTRADoc.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\Axis_Direction.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\BeamAnalysis.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\BeamAnalysisCalculator.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\CatchmentFunctions.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\CodeSnap\CopyCoordinates.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\ConcentrateLoad.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\Elements.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\ENUMS.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\Envelope.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\Factory.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\frmMovingLoadRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\frmMovingLoadRun.Designer.cs">
+      <DependentUpon>frmMovingLoadRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\HydroCrossSection.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\JointCoordinate.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\JointLoad.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\MovingWheel.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\LoadDeflection.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\MemberIncidence.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\MemberLoad.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\MemberProperty.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\PostProcessHelper.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\SaveFormRecords.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\SlabDesign\SLAB01.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\SlabDesign\SLAB02.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\SlabDesign\SLAB03.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\SlabDesign\SLAB04.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\ASTRA_Tables.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\BillOfQuantity.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\frmPile_Graph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\frmPile_Graph.Designer.cs">
+      <DependentUpon>frmPile_Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\frm_InteractionDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\frm_InteractionDiagram.Designer.cs">
+      <DependentUpon>frm_InteractionDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\StructureDesign.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\StructureDesign\StructureDrawing.cs" />
+    <Compile Include="ASTRA\ASTRAClasses\Support.cs" />
+    <Compile Include="ASTRA\ASTRACommands.cs" />
+    <Compile Include="ASTRA\ASTRAControls\frm_TextAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAControls\frm_TextAnalysis.Designer.cs">
+      <DependentUpon>frm_TextAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAControls\UC_ASTRA_Controls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAControls\UC_ASTRA_Controls.Designer.cs">
+      <DependentUpon>UC_ASTRA_Controls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRADrawingTools\ASTRAArrow.cs" />
+    <Compile Include="ASTRA\ASTRADrawingTools\ASTRAMemberLoad.cs" />
+    <Compile Include="ASTRA\ASTRADrawingTools\ASTRASupport.cs" />
+    <Compile Include="ASTRA\ASTRAForms\frm_ASTRA_Analysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_ASTRA_Analysis.Designer.cs">
+      <DependentUpon>frm_ASTRA_Analysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmASTRALoadDeflections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmASTRALoadDeflections.designer.cs">
+      <DependentUpon>frmASTRALoadDeflections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmASTRAReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmASTRAReport.Designer.cs">
+      <DependentUpon>frmASTRAReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmCatchmentAreaVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmCatchmentAreaVolume.Designer.cs">
+      <DependentUpon>frmCatchmentAreaVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmMovingAnalysisForces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmMovingAnalysisForces.Designer.cs">
+      <DependentUpon>frmMovingAnalysisForces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmOpenHydrologyDrawing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmOpenHydrologyDrawing.Designer.cs">
+      <DependentUpon>frmOpenHydrologyDrawing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmScourDepthCalculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmScourDepthCalculation.Designer.cs">
+      <DependentUpon>frmScourDepthCalculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmMemberGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmMemberGrid.Designer.cs">
+      <DependentUpon>frmMemberGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmMemberLoadCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmMemberLoadCase.Designer.cs">
+      <DependentUpon>frmMemberLoadCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmASTRAMovingLoadDeflections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmASTRAMovingLoadDeflections.Designer.cs">
+      <DependentUpon>frmASTRAMovingLoadDeflections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmNodeGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmNodeGrid.Designer.cs">
+      <DependentUpon>frmNodeGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmPostProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmPostProcess.Designer.cs">
+      <DependentUpon>frmPostProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmSLAB01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmSLAB01.Designer.cs">
+      <DependentUpon>frmSLAB01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmSLAB02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmSLAB02.Designer.cs">
+      <DependentUpon>frmSLAB02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmTextSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmTextSize.Designer.cs">
+      <DependentUpon>frmTextSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmBeamAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frmBeamAnalysis.Designer.cs">
+      <DependentUpon>frmBeamAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\frm_ContourModeling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAClasses\frm_ContourModeling.Designer.cs">
+      <DependentUpon>frm_ContourModeling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_ASTRA_Controls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_ASTRA_Controls.Designer.cs">
+      <DependentUpon>frm_ASTRA_Controls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_ASTRA_Inputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_ASTRA_Inputs.Designer.cs">
+      <DependentUpon>frm_ASTRA_Inputs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Beam_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Beam_BOQ.Designer.cs">
+      <DependentUpon>frm_Beam_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Column_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Column_BOQ.Designer.cs">
+      <DependentUpon>frm_Column_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Footing_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Footing_BOQ.Designer.cs">
+      <DependentUpon>frm_Footing_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_GroundModeling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_GroundModeling.Designer.cs">
+      <DependentUpon>frm_GroundModeling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Intact_Diag1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Intact_Diag1.Designer.cs">
+      <DependentUpon>frm_Intact_Diag1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_LoadExample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_LoadExample.Designer.cs">
+      <DependentUpon>frm_LoadExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Load_Line_Diagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Load_Line_Diagram.Designer.cs">
+      <DependentUpon>frm_Load_Line_Diagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_ModelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_ModelEdit.Designer.cs">
+      <DependentUpon>frm_ModelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Beam_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Beam_BOQ.Designer.cs">
+      <DependentUpon>frm_Modify_Beam_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Column_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Column_BOQ.Designer.cs">
+      <DependentUpon>frm_Modify_Column_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Footing_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Footing_BOQ.Designer.cs">
+      <DependentUpon>frm_Modify_Footing_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Pile_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Pile_BOQ.Designer.cs">
+      <DependentUpon>frm_Modify_Pile_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Staircase_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Modify_Staircase_BOQ.Designer.cs">
+      <DependentUpon>frm_Modify_Staircase_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Open_Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Open_Project.Designer.cs">
+      <DependentUpon>frm_Open_Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_PIle_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_PIle_BOQ.Designer.cs">
+      <DependentUpon>frm_PIle_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Process_Terrain_Survey_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Process_Terrain_Survey_data.Designer.cs">
+      <DependentUpon>frm_Process_Terrain_Survey_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_RaftHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_RaftHelp.Designer.cs">
+      <DependentUpon>frm_RaftHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_SeismicAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_SeismicAnalysis.Designer.cs">
+      <DependentUpon>frm_SeismicAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Seismic_Suspension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Seismic_Suspension.Designer.cs">
+      <DependentUpon>frm_Seismic_Suspension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Slab_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Slab_BOQ.Designer.cs">
+      <DependentUpon>frm_Slab_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Staircase_BOQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Staircase_BOQ.Designer.cs">
+      <DependentUpon>frm_Staircase_BOQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_StructureDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_StructureDesign.Designer.cs">
+      <DependentUpon>frm_StructureDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Triangulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\ASTRAForms\frm_Triangulation.Designer.cs">
+      <DependentUpon>frm_Triangulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\ASTRACAD.cs" />
+    <Compile Include="ASTRA\CadToAstra\DrawingMenu.cs" />
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmAnalysisType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmAnalysisType.Designer.cs">
+      <DependentUpon>frmAnalysisType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmAreaLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmAreaLoad.Designer.cs">
+      <DependentUpon>frmAreaLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmDefineMovingLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmDefineMovingLoad.Designer.cs">
+      <DependentUpon>frmDefineMovingLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmElementLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmElementLoad.Designer.cs">
+      <DependentUpon>frmElementLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmElementProp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmElementProp.Designer.cs">
+      <DependentUpon>frmElementProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmElements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmElements.Designer.cs">
+      <DependentUpon>frmElements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmFinish.Designer.cs">
+      <DependentUpon>frmFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmFloorLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmFloorLoad.Designer.cs">
+      <DependentUpon>frmFloorLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmJointLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmJointLoad.Designer.cs">
+      <DependentUpon>frmJointLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmJoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmJoints.Designer.cs">
+      <DependentUpon>frmJoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmJointWeight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmJointWeight.Designer.cs">
+      <DependentUpon>frmJointWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmLiveLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmLiveLoad.Designer.cs">
+      <DependentUpon>frmLiveLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmLoad.Designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmLoadCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmLoadCase.Designer.cs">
+      <DependentUpon>frmLoadCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmLoadCombination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmLoadCombination.Designer.cs">
+      <DependentUpon>frmLoadCombination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMaterialProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMaterialProperties.Designer.cs">
+      <DependentUpon>frmMaterialProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberGridBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberGridBox.Designer.cs">
+      <DependentUpon>frmMemberGridBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberGroups.Designer.cs">
+      <DependentUpon>frmMemberGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberLoad.Designer.cs">
+      <DependentUpon>frmMemberLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberRelease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberRelease.Designer.cs">
+      <DependentUpon>frmMemberRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMembers.Designer.cs">
+      <DependentUpon>frmMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberTruss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMemberTruss.Designer.cs">
+      <DependentUpon>frmMemberTruss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMovingLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmMovingLoad.Designer.cs">
+      <DependentUpon>frmMovingLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmNodeGridBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmNodeGridBox.Designer.cs">
+      <DependentUpon>frmNodeGridBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmResponse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmResponse.Designer.cs">
+      <DependentUpon>frmResponse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmSectionProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmSectionProperties.Designer.cs">
+      <DependentUpon>frmSectionProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmProjectTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmProjectTitle.Designer.cs">
+      <DependentUpon>frmProjectTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmSeismicLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmSeismicLoad.Designer.cs">
+      <DependentUpon>frmSeismicLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmSupport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmSupport.Designer.cs">
+      <DependentUpon>frmSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmSupportDisplacements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmSupportDisplacements.Designer.cs">
+      <DependentUpon>frmSupportDisplacements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmTempLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmTempLoad.Designer.cs">
+      <DependentUpon>frmTempLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmTimeHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmTimeHistory.Designer.cs">
+      <DependentUpon>frmTimeHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmWindLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frmWindLoad.Designer.cs">
+      <DependentUpon>frmWindLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frm_DrawingToData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\FORMS\frm_DrawingToData.Designer.cs">
+      <DependentUpon>frm_DrawingToData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASTRA\CadToAstra\IASTRACAD.cs" />
+    <Compile Include="ASTRA\HASP_Lock.cs">
+    </Compile>
+    <Compile Include="Blink.cs" />
+    <Compile Include="DisNet\DisNetClasses\DisNetDoc.cs" />
+    <Compile Include="DisNet\DisNetClasses\DisNetLoop.cs" />
+    <Compile Include="DisNet\DisNetClasses\DisNetNode.cs" />
+    <Compile Include="DisNet\DisNetClasses\DisNetPipeDetails.cs" />
+    <Compile Include="DisNet\DisNetCommands.cs" />
+    <Compile Include="DisNet\frmDisNetDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisNet\frmDisNetDetails.Designer.cs">
+      <DependentUpon>frmDisNetDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisNet\frmDrawPipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisNet\frmDrawPipe.Designer.cs">
+      <DependentUpon>frmDrawPipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingToData\frmDrawPolylineFromFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingToData\frmDrawPolylineFromFile.designer.cs">
+      <DependentUpon>frmDrawPolylineFromFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingToData\frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingToData\frmOptions.designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingToData\PolyApp.cs" />
+    <Compile Include="frm_Demo_StructureVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Demo_StructureVersion.Designer.cs">
+      <DependentUpon>frm_Demo_StructureVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Demo_Version.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Demo_Version.Designer.cs">
+      <DependentUpon>frm_Demo_Version.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProperty.Designer.cs">
+      <DependentUpon>frmProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HEADSEntities.cs" />
+    <Compile Include="DisNet\Pipe3D.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="DisNet\SectionClip.cs" />
+    <Compile Include="StringDraw\frm_StringDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringDraw\frm_StringDraw.designer.cs">
+      <DependentUpon>frm_StringDraw.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASTRA\ASTRAClasses\frmMovingLoadRun.resx">
+      <DependentUpon>frmMovingLoadRun.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAClasses\StructureDesign\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAClasses\StructureDesign\frmPile_Graph.resx">
+      <DependentUpon>frmPile_Graph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAClasses\StructureDesign\frm_InteractionDiagram.resx">
+      <DependentUpon>frm_InteractionDiagram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAControls\frm_TextAnalysis.resx">
+      <DependentUpon>frm_TextAnalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAControls\UC_ASTRA_Controls.resx">
+      <DependentUpon>UC_ASTRA_Controls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmASTRALoadDeflections.resx">
+      <DependentUpon>frmASTRALoadDeflections.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmASTRAReport.resx">
+      <DependentUpon>frmASTRAReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmBeamAnalysis.resx">
+      <DependentUpon>frmBeamAnalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmCatchmentAreaVolume.resx">
+      <DependentUpon>frmCatchmentAreaVolume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmMovingAnalysisForces.resx">
+      <DependentUpon>frmMovingAnalysisForces.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmOpenHydrologyDrawing.resx">
+      <DependentUpon>frmOpenHydrologyDrawing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmScourDepthCalculation.resx">
+      <DependentUpon>frmScourDepthCalculation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmMemberGrid.resx">
+      <DependentUpon>frmMemberGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmMemberLoadCase.resx">
+      <DependentUpon>frmMemberLoadCase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmASTRAMovingLoadDeflections.resx">
+      <DependentUpon>frmASTRAMovingLoadDeflections.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmNodeGrid.resx">
+      <DependentUpon>frmNodeGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmPostProcess.resx">
+      <DependentUpon>frmPostProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmSLAB01.resx">
+      <DependentUpon>frmSLAB01.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmSLAB02.resx">
+      <DependentUpon>frmSLAB02.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frmTextSize.resx">
+      <DependentUpon>frmTextSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAClasses\frm_ContourModeling.resx">
+      <DependentUpon>frm_ContourModeling.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_ASTRA_Analysis.resx">
+      <DependentUpon>frm_ASTRA_Analysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_ASTRA_Controls.resx">
+      <DependentUpon>frm_ASTRA_Controls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_ASTRA_Inputs.resx">
+      <DependentUpon>frm_ASTRA_Inputs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Beam_BOQ.resx">
+      <DependentUpon>frm_Beam_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Column_BOQ.resx">
+      <DependentUpon>frm_Column_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Footing_BOQ.resx">
+      <DependentUpon>frm_Footing_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_GroundModeling.resx">
+      <DependentUpon>frm_GroundModeling.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Intact_Diag1.resx">
+      <DependentUpon>frm_Intact_Diag1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_LoadExample.resx">
+      <DependentUpon>frm_LoadExample.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Load_Line_Diagram.resx">
+      <DependentUpon>frm_Load_Line_Diagram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_ModelEdit.resx">
+      <DependentUpon>frm_ModelEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Modify_Beam_BOQ.resx">
+      <DependentUpon>frm_Modify_Beam_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Modify_Column_BOQ.resx">
+      <DependentUpon>frm_Modify_Column_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Modify_Footing_BOQ.resx">
+      <DependentUpon>frm_Modify_Footing_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Modify_Pile_BOQ.resx">
+      <DependentUpon>frm_Modify_Pile_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Modify_Staircase_BOQ.resx">
+      <DependentUpon>frm_Modify_Staircase_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Open_Project.resx">
+      <DependentUpon>frm_Open_Project.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_PIle_BOQ.resx">
+      <DependentUpon>frm_PIle_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Process_Terrain_Survey_data.resx">
+      <DependentUpon>frm_Process_Terrain_Survey_data.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_RaftHelp.resx">
+      <DependentUpon>frm_RaftHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_SeismicAnalysis.resx">
+      <DependentUpon>frm_SeismicAnalysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Seismic_Suspension.resx">
+      <DependentUpon>frm_Seismic_Suspension.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Slab_BOQ.resx">
+      <DependentUpon>frm_Slab_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Staircase_BOQ.resx">
+      <DependentUpon>frm_Staircase_BOQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_StructureDesign.resx">
+      <DependentUpon>frm_StructureDesign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\ASTRAForms\frm_Triangulation.resx">
+      <DependentUpon>frm_Triangulation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmAnalysisType.resx">
+      <DependentUpon>frmAnalysisType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmAreaLoad.resx">
+      <DependentUpon>frmAreaLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmDefineMovingLoad.resx">
+      <DependentUpon>frmDefineMovingLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmElementLoad.resx">
+      <DependentUpon>frmElementLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmElementProp.resx">
+      <DependentUpon>frmElementProp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmElements.resx">
+      <DependentUpon>frmElements.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmFinish.resx">
+      <DependentUpon>frmFinish.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmFloorLoad.resx">
+      <DependentUpon>frmFloorLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmJointLoad.resx">
+      <DependentUpon>frmJointLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmJoints.resx">
+      <DependentUpon>frmJoints.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmJointWeight.resx">
+      <DependentUpon>frmJointWeight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmLiveLoad.resx">
+      <DependentUpon>frmLiveLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmLoad.resx">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmLoadCase.resx">
+      <DependentUpon>frmLoadCase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmLoadCombination.resx">
+      <DependentUpon>frmLoadCombination.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmMaterialProperties.resx">
+      <DependentUpon>frmMaterialProperties.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmMemberGridBox.resx">
+      <DependentUpon>frmMemberGridBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmMemberGroups.resx">
+      <DependentUpon>frmMemberGroups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmMemberLoad.resx">
+      <DependentUpon>frmMemberLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmMemberRelease.resx">
+      <DependentUpon>frmMemberRelease.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmMembers.resx">
+      <DependentUpon>frmMembers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmMemberTruss.resx">
+      <DependentUpon>frmMemberTruss.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmMovingLoad.resx">
+      <DependentUpon>frmMovingLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmNodeGridBox.resx">
+      <DependentUpon>frmNodeGridBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmResponse.resx">
+      <DependentUpon>frmResponse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmSectionProperties.resx">
+      <DependentUpon>frmSectionProperties.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmProjectTitle.resx">
+      <DependentUpon>frmProjectTitle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmSeismicLoad.resx">
+      <DependentUpon>frmSeismicLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmSupport.resx">
+      <DependentUpon>frmSupport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmSupportDisplacements.resx">
+      <DependentUpon>frmSupportDisplacements.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmTempLoad.resx">
+      <DependentUpon>frmTempLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmTimeHistory.resx">
+      <DependentUpon>frmTimeHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frmWindLoad.resx">
+      <DependentUpon>frmWindLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASTRA\CadToAstra\FORMS\frm_DrawingToData.resx">
+      <DependentUpon>frm_DrawingToData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisNet\frmDisNetDetails.resx">
+      <DependentUpon>frmDisNetDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisNet\frmDrawPipe.resx">
+      <DependentUpon>frmDrawPipe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingToData\frmDrawPolylineFromFile.resx">
+      <DependentUpon>frmDrawPolylineFromFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingToData\frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Demo_StructureVersion.resx">
+      <DependentUpon>frm_Demo_StructureVersion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Demo_Version.resx">
+      <DependentUpon>frm_Demo_Version.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProperty.resx">
+      <DependentUpon>frmProperty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringDraw\frm_StringDraw.resx">
+      <DependentUpon>frm_StringDraw.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ASTRA\back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ASTRA\forword.bmp" />
+    <None Include="HEADSNeedClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LastButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Help\Dialogboxes.txt" />
+    <None Include="Resources\raft_help.jpg" />
+    <None Include="Resources\Reinf_4_side.jpg" />
+    <None Include="Resources\Reinf_2_side.jpg" />
+    <None Include="Resources\pile_fond_graph.jpg" />
+    <None Include="Resources\img_techsoft.jpg" />
+    <None Include="Resources\HdViewerApp.ico" />
+    <None Include="Resources\EditCode.bmp" />
+    <None Include="Resources\Exit.ico" />
+    <None Include="Resources\printFile.ico" />
+    <None Include="Resources\OpenFile.ico" />
+    <None Include="Resources\MProps.jpg" />
+    <None Include="Resources\3D_wire.ico" />
+    <None Include="Resources\3dEdgeON.ico" />
+    <None Include="Resources\MLoads.jpg" />
+    <None Include="Resources\lINLoads.jpg" />
+    <None Include="Resources\saveFile.ico" />
+    <None Include="Resources\MovingLoadDef.jpg" />
+    <None Include="Resources\MovingLoads.jpg" />
+    <None Include="Resources\DataContainer_MovePreviousHS.bmp" />
+    <None Include="Resources\DataContainer_MoveNextHS.bmp" />
+    <None Include="Resources\DataContainer_MoveLastHS.bmp" />
+    <None Include="Resources\DataContainer_MoveFirstHS.bmp" />
+    <None Include="Resources\ZoomW.ico" />
+    <None Include="Resources\zoomP.ico" />
+    <None Include="Resources\ZoomOUT.ico" />
+    <None Include="Resources\zoomIN.ico" />
+    <None Include="Resources\ZoomE.ico" />
+    <None Include="Resources\zoomALL.ico" />
+    <None Include="Resources\pan.ico" />
+    <None Include="Resources\3DVTOP.ico" />
+    <None Include="Resources\3DVSW.ico" />
+    <None Include="Resources\3DVSE.ico" />
+    <None Include="Resources\3DVRIGHT.ico" />
+    <None Include="Resources\3DVNW.ico" />
+    <None Include="Resources\3DVNE.ico" />
+    <None Include="Resources\3DVLEFT.ico" />
+    <None Include="Resources\3dviewshade.ico" />
+    <None Include="Resources\3DVFRONT.ico" />
+    <None Include="Resources\3DVBOTTOM.ico" />
+    <None Include="Resources\3DVBACK.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HeadsFunctions1\HeadsFunctions1.csproj">
+      <Project>{6294DB5A-D8C2-49E9-9CCB-C90B8AE2ED79}</Project>
+      <Name>HeadsFunctions1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeadsUtils\HeadsUtils.csproj">
+      <Project>{67CF6BA7-E35B-47F4-851A-47BE85AF0FCE}</Project>
+      <Name>HeadsUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovingLoadAnalysis\MovingLoadAnalysis.csproj">
+      <Project>{9FE52852-6876-4E9E-BD17-891F9CC12D2E}</Project>
+      <Name>MovingLoadAnalysis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

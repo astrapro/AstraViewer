@@ -1,0 +1,375 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6294DB5A-D8C2-49E9-9CCB-C90B8AE2ED79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HeadsFunctions1</RootNamespace>
+    <AssemblyName>HeadsFunctions1</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\HeadsViewer\bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\HeadsViewer\bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chainage\CChainageUtil.cs" />
+    <Compile Include="Chainage\FormChainage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chainage\FormChainage.Designer.cs">
+      <DependentUpon>FormChainage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigParam\FormCfgParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigParam\FormCfgParam.Designer.cs">
+      <DependentUpon>FormCfgParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coordinates\CCoordinatesUtil.cs" />
+    <Compile Include="Coordinates\FormCoordinates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coordinates\FormCoordinates.Designer.cs">
+      <DependentUpon>FormCoordinates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details\CDetailsHalignUtil.cs" />
+    <Compile Include="Details\CDetailsValignUtil.cs" />
+    <Compile Include="Details\FormDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details\FormDetails.Designer.cs">
+      <DependentUpon>FormDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingUtil.cs" />
+    <Compile Include="FindOption\FormFindOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindOption\FormFindOption.Designer.cs">
+      <DependentUpon>FormFindOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Halignment\CElementData.cs" />
+    <Compile Include="Halignment\CHalignElementUtil.cs" />
+    <Compile Include="Halignment\CHalignHipUtill.cs" />
+    <Compile Include="CHeadsFunctionFactory.cs" />
+    <Compile Include="CustomCtrls\TextBoxDouble.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawString\FormDrawString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawString\FormDrawString.designer.cs">
+      <DependentUpon>FormDrawString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Halignment\FormElementMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Halignment\FormElementMethod.Designer.cs">
+      <DependentUpon>FormElementMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Halignment\FormHipEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Halignment\FormHipEdit.Designer.cs">
+      <DependentUpon>FormHipEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Halignment\FormHipMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Halignment\FormHipMethod.Designer.cs">
+      <DependentUpon>FormHipMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Halignment\FormOpenHipMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Halignment\FormOpenHipMethod.Designer.cs">
+      <DependentUpon>FormOpenHipMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Halignment\Modelling\CHalignModelUtil.cs" />
+    <Compile Include="Halignment\Modelling\FormHalignModelViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Halignment\Modelling\FormHalignModelViewer.Designer.cs">
+      <DependentUpon>FormHalignModelViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Halignment\Modelling\FormModellingHalign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Halignment\Modelling\FormModellingHalign.Designer.cs">
+      <DependentUpon>FormModellingHalign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\FormLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\FormLayout.Designer.cs">
+      <DependentUpon>FormLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDeflection\FormLoadDeflection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadDeflection\FormLoadDeflection.Designer.cs">
+      <DependentUpon>FormLoadDeflection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSection\FormLSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSection\FormLSection.Designer.cs">
+      <DependentUpon>FormLSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSection\FormLSectionGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSection\FormLSectionGrid.Designer.cs">
+      <DependentUpon>FormLSectionGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSection\LSTTypeCache.cs" />
+    <Compile Include="MakeString\FormMakeString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeString\FormMakeString.Designer.cs">
+      <DependentUpon>FormMakeString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Offset\COffsetUtil.cs" />
+    <Compile Include="Offset\FormOffset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offset\FormOffset.Designer.cs">
+      <DependentUpon>FormOffset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Offset\Modelling\COffsetModelUtil.cs" />
+    <Compile Include="Offset\Modelling\FormModellingOffset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offset\Modelling\FormModellingOffset.Designer.cs">
+      <DependentUpon>FormModellingOffset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Offset\Modelling\FormModellingOffsetViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offset\Modelling\FormModellingOffsetViewer.Designer.cs">
+      <DependentUpon>FormModellingOffsetViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Valignment\CValignUtil.cs" />
+    <Compile Include="Valignment\FormEditValign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valignment\FormEditValign.designer.cs">
+      <DependentUpon>FormEditValign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Valignment\FormOpenValignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valignment\FormOpenValignment.Designer.cs">
+      <DependentUpon>FormOpenValignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Valignment\FormValignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valignment\FormValignment.Designer.cs">
+      <DependentUpon>FormValignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Valignment\Modelling\CValignModelUtil.cs" />
+    <Compile Include="Valignment\Modelling\FormModellingValignViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valignment\Modelling\FormModellingValignViewer.designer.cs">
+      <DependentUpon>FormModellingValignViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Valignment\Modelling\FormModellingValign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Valignment\Modelling\FormModellingValign.designer.cs">
+      <DependentUpon>FormModellingValign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingFolder\FormWorkingFolderSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingFolder\FormWorkingFolderSelector.Designer.cs">
+      <DependentUpon>FormWorkingFolderSelector.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chainage\FormChainage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormChainage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigParam\FormCfgParam.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCfgParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coordinates\FormCoordinates.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCoordinates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details\FormDetails.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawString\FormDrawString.resx">
+      <DependentUpon>FormDrawString.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindOption\FormFindOption.resx">
+      <DependentUpon>FormFindOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Halignment\FormElementMethod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormElementMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Halignment\FormHipEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormHipEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Halignment\FormHipMethod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormHipMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Halignment\FormOpenHipMethod.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormOpenHipMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Halignment\Modelling\FormHalignModelViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormHalignModelViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Halignment\Modelling\FormModellingHalign.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormModellingHalign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\FormLayout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDeflection\FormLoadDeflection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLoadDeflection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSection\FormLSection.resx">
+      <DependentUpon>FormLSection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSection\FormLSectionGrid.resx">
+      <DependentUpon>FormLSectionGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeString\FormMakeString.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMakeString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offset\FormOffset.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormOffset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offset\Modelling\FormModellingOffset.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormModellingOffset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offset\Modelling\FormModellingOffsetViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormModellingOffsetViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valignment\FormEditValign.resx">
+      <DependentUpon>FormEditValign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valignment\FormOpenValignment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormOpenValignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valignment\FormValignment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormValignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valignment\Modelling\FormModellingValignViewer.resx">
+      <DependentUpon>FormModellingValignViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Valignment\Modelling\FormModellingValign.resx">
+      <DependentUpon>FormModellingValign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingFolder\FormWorkingFolderSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormWorkingFolderSelector.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HeadsUtils\HeadsUtils.csproj">
+      <Project>{67CF6BA7-E35B-47F4-851A-47BE85AF0FCE}</Project>
+      <Name>HeadsUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrevButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NextButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PauseButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LastButton.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

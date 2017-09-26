@@ -1,0 +1,309 @@
+//Remarks
+//Subbutton = Name(Text) , Command , Icon image,ExportToToolbar(can be empty)
+ImagesFolder = ..\images
+
+MainMenu = Help
+	SubButton = Content..., HelpContent,false, False
+	SubButton = About, HelpAbout,About.ico, False
+
+MainMenu = Window
+   SubButton = Cascade , Cascade ,cascade.ico, False
+   SubButton = Tile Horizontal, TileHorizontal ,TileHor.ico, False
+   SubButton = Tile Vertical, TileVertical ,TileVer.ico, False
+   SubButton = Arange Icons, ArangeIcons ,Arrange.ico, False
+   SubButton = Close All Windows , CloseAll ,CloseAll.ico, False
+
+//MainMenu = Drawing To Data
+	//SubButton = Open Drawing, DD_OpenDrawing ,false,false
+  	//SubButton = Open Data File, DD_OpenDataFile,false,false
+  	//SubButton = Project Title, DD_ProjectTitle,false,false
+  	//SubButton = Structure Geometry, DD_StructuralGeometry,false,false
+  	
+  	//SubButton = Joint Coordinates, DD_JointCoordinates,false,false
+  	//SubButton = Member Connectivity / Incidence, DD_MemberIncidence,false,false
+  	
+  	
+  	//SubButton = Member Truss, DD_MemberTruss,false,false
+  	//SubButton = Member Release, DD_MemberRelease,false,false
+  	//SubButton = Section Properties, DD_SectionProperties,false,false
+  	//SubButton = Material Properties, DD_MaterialProperties,false,false
+  	//SubButton = Support, DD_Support,false,false
+  	//SubButton = Load, DD_Load,false,false
+  	//SubButton = Moving Load, DD_MovingLoad,false,false
+  	//SubButton = Analysis Type, DD_AnalysisType,false,false
+  	//SubButtonMenu = Show Data
+  		//SubMenuButton = Whole Data, DD_ShowData,false,false
+		//SubMenuButton = Joint Coordinates, DD_JointCoordinates,false,false
+		//SubMenuButton = Member Connectivity / Incidence, DD_MemberIncidence ,false,false
+  	
+  	
+  	//SubButton = Finish Statement, DD_Finish,false,false
+  	//SubButton = Save Data File, DD_SaveDataFile,false,false
+  	//SubButton = Refresh, DD_Refresh,false,false
+  	
+//MainMenu = Details
+
+  	//SubButtonMenu = Joint Nos.
+		//SubMenuButton = ON, JointsOn,false,false
+		//SubMenuButton = OFF, JointsOff ,false,false
+	//SubButtonMenu = Member Nos.
+		//SubMenuButton = ON, MembersOn,false,false
+		//SubMenuButton = OFF, MembersOff ,false,false
+	//SubButtonMenu = Elements
+		//SubMenuButton = ON, ElementOn,false,false
+		//SubMenuButton = OFF, ElementOff ,false,false
+		
+			
+	//SubButtonMenu = Support Fixed
+		//SubMenuButton = ON, SupportFixedOn,false,false
+		//SubMenuButton = OFF, SupportFixedOff ,false,false
+	//SubButtonMenu = Support Pinned
+		//SubMenuButton = ON, SupportPinnedOn,false,false
+		//SubMenuButton = OFF, SupportPinnedOff ,false,false
+	//SubButtonMenu = Joint Load
+			//SubMenuButton = ON, JointLoadOn,false,false
+			//SubMenuButton = OFF, JointLoadOff ,false,false
+		
+	//SubButtonMenu = Member Load
+		//SubMenuButton = ON, MemberLoadOn,false,false
+		//SubMenuButton = OFF, MemberLoadOff ,false,false
+
+MainMenu = View 3D
+   SubButton = Rotate 3D , View3DVrot , 3D_orbit.ico
+   SubButton = Render , View3DRender , 3drender.ico
+   SubButton = Shade , View3DShade , 3dviewshade.ico 
+   SubButton = ShadeOn , View3DShadeOn , 3dEdgeON.ico 
+   SubButton = Hide , View3DHide , 3D_Hide.ico 
+   SubButton = Wire , View3DWire , 3D_wire.ico
+   SubButton = Wire 2D , View3DWire2d , 3D_wire.ico
+             SubButtonMenu = Views
+	SubMenuButton = Top , View3DVTop , 3DVTOP.ico 
+	SubMenuButton = Bottom ,View3DVBottom , 3DVBOTTOM.ico 
+	SubMenuButton = Left , View3DVLeft , 3DVLEFT.ico 
+	SubMenuButton = Right , View3DVRight , 3DVRIGHT.ico 
+	SubMenuButton = Front , View3DVFront , 3DVFRONT.ico 
+	SubMenuButton = Back , View3DVBack , 3DVBACK.ico 
+	SubMenuButton = NE , View3DVINE , 3DVNE.ico 
+	SubMenuButton = NW , View3DVINW , 3DVNW.ico 
+	SubMenuButton = SE , View3DVISE , 3DVSE.ico 
+	SubMenuButton = SW , View3DVISW , 3DVSW.ico
+
+MainMenu = Modify
+   SubButton = Align , Align , Align.ico
+   SubButton = Rotate 3D, Rotate3D , Rotate3D.ico 
+   SubButton = Rotate , Rotate , Rotate.ico 
+   SubButton = Copy, Copy , copyent.ico 
+   SubButton = Erase , Erase , Erase.ico 
+   SubButton = Move , Move , Move.ico 
+   SubButton = Explode, Explode , Explode.ico
+   SubButton = Mirror , Mirror  , Mirror.ico 
+    SubButton = Scale , Scale  , Scale.ico
+             SubButtonMenu = Array Entities
+	SubMenuButton = Rectangular Array , ArrayRectangular, array.ico
+	SubMenuButton = Polar Array , ArrayPolar, ARRAYPolar.ico
+   SubButton = Break , Break , break.ico 
+   SubButton = Offset , Offset , offset.ico 
+   SubButton = Extend , Extend , extend.ico
+   SubButton = Trim , Trim , trim.ico 
+   SubButton = Fillet , Fillet , fillet.ico
+   SubButton = Stretch , Stretch ,stretch.ico
+   SubButton = Slice , Slice ,slice.ico
+   SubButton = Edit MText , EditMText ,emtext.ico
+MainMenu = Format
+   SubButton = Layers Dialog, LayersD , Layers.ico
+   SubButton = Textstyles Dialog, TextStylesD,Textstyles.ico
+   SubButton = Dimension styles Dialog, DimensionsStylesD,Dimstyles.ico
+   SubButton = Point Styles Dialog, PointStyleD ,Pointstyle.ico
+   SubButton = External References Dialog, ExternalReferenceD ,xrefs.ico
+   SubButton = Image Definitions Dialog,ImageDefinitionD ,ImageManager.ico
+   SubButton = Osnaps Dialog, OsnapsD,Osnaps.ico
+   SubButton = Lights Dialog, LightsD,LightManager.ico
+   SubButton = Blocks Manager, blkdialog ,blocklibrary.ico
+		
+
+ MainMenu = ASTRA
+  	SubButton = Open Analysis Input Data File with View, drawStructure,false,false
+  	SubButton = Analysis by TEXT Data File, AstraDataFileOpen,false,false
+  	SubButton = Analysis by Structure Drawing File, DD_OpenDrawing,false,false
+  	SubButton = Structure Analysis and Design, DD_StructureDesign,false,false
+  	//SubButton = Structure, drawStructure,false,false
+  	//SubButton = Text Size, TextSize,false,false
+	
+  	//SubButton = Loading, LoadingOn,false,false
+  	//SubButton = Analysis, RunAnalysis,false,false
+  	//SubButton = Max Force, MaxForce,false,false
+  	//SubButton = Report, AstraReport,false,false
+  	//SubButton = Post Process, AstraPostProcess,false,false
+	//SubButton = Load Deflection, LoadDeflection ,false,false
+	//SubButton = View Moving Load, ViewMovingLoad ,false,false
+  	//SubButton = Explorer, explorer,false,false
+  
+ MainMenu = Hydrology
+  	 SubButton = Scour Depth Calculation,CATCHMENT_ScourDepthCalculation , false, false
+	 SubButtonMenu = Storage Area/Volume
+	   SubMenuButton = Users Guide, CATCHMENT_UG ,false,false
+	   //SubMenuButton = Sample Drawing for Topography, CATCHMENT_SampleDrawingTopography , false, false
+	   SubMenuButton = Open Contour Drawing, Open ,OpenFile.ico, false
+	   SubMenuButton = Generate Report, CATCHMENT_AREAVOLUME ,false,false
+	   //SubMenuButton =  Text Data to Mapping,CATCHMENT_TEXTMAPPING,false, false
+	   //SubMenuButton = Color Fill, CATCHMENT_COLORFILL , false, false
+	 SubButtonMenu = Stream Hydrology
+  	   //SubMenuButton = Process Terrain Survey Data ,CATCHMENT_ProcessTerrainSurveyData , false, false
+	   //SubMenuButton = Sample Drawing for Hydrograph (SUH), CATCHMENT_SampleDrawingHydrograph , false, false
+	   //SubMenuButton = Design Calculation for Hydrograph, CATCHMENT_HYDROGRAPH , false, false
+	   //SubMenuButton = Open Hydrograph Design Calculation , CATCHMENT_OPENHYDROGRAPH , false, false
+	   
+	   SubMenuButton = Open Drawing for River Alignment , CATCHMENT_SampleDrawingHydrograph , false, false
+  	   SubMenuButton = Process Terrain Survey Data ,CATCHMENT_ProcessTerrainSurveyData , false, false
+  	   SubMenuButton = New Calculation for Hydrograph ,CATCHMENT_HYDROGRAPH , false, false
+  	   SubMenuButton = Open Calculation for Hydrograph ,CATCHMENT_OPENHYDROGRAPH , false, false
+ MainMenu = Design Utils
+  	   SubButton = Drawing to Text Data ,DrawingToDataFile , false, false
+	   SubButton = Text Data to Drawing, DrawPolyLineFromText , false, false
+	   SubButton = Modeling From Text Data, ModelingFromTextData , false, false
+	   SubButton = Ground Modeling , GroundModeling , false, false
+	   SubButton = Contour Modeling , ContourModeling , false, false
+	   SubButton = Draw Model / String , DrawString , false, false
+	   SubButton = Make String , DesignMakeString , false, false
+	   SubButton = Boundary String,DesignBoundary,false, false
+	   SubButton = Chainage ON , DesignChainageOn , false, false
+	   SubButton = Chainage OFF , DesignChainageOff , false, false
+	   SubButton = Model Edit , ModelEdit , false, false
+MainMenu = Draw
+   SubButton = Line,Line,line.ico
+   SubButton = Arc,Arc,arc.ico
+   SubButton = Circle,Circle,circle.ico
+   SubButton = Text,Text,text.ico
+   SubButton = MultiText,MText,mtext.ico
+   SubButton = Point, Point ,Point.ico
+   SubButton = Ellipse , Ellipse , Ellipse.ico
+   SubButton = Rectangle, Rect , Rect.ico
+   SubButton = Polyline , Polyline , Polyline.ico
+   SubButton = Leader , Leader , Leader.ico
+   SubButton = Image ,Image , Image.ico
+   SubButton = Xline ,XLine , XLine.ico
+   SubButton = XRay ,RayLine , Ray.ico
+   SubButtonMenu = 3D Surfaces
+	SubMenuButton = Box, Box, Box.ico
+	SubMenuButton = Cone, Cone, Cone.ico
+	SubMenuButton = Sphere, Sphere, Sphere.ico
+	SubMenuButton = Torus, Torus, Torus.ico
+	SubMenuButton = Mesh, Mesh, Mesh.ico
+	SubMenuButton = Face, Face, Face.ico
+	SubButtonMenu = Dimensions
+	SubMenuButton = Vertical Dimension, DimRotatedVer, DimVer.ico
+	SubMenuButton = Horizontal Dimension, DimRotatedHor , DimHor.ico
+	SubMenuButton = Aligned Dimension , DimAligned , DimAlign.ico
+	SubMenuButton = Angular Dimension , DimAngular , DimRot.ico
+	SubMenuButton = Diameter Dimension, DimDiameter , Dimdiam.ico 
+	SubMenuButton = Radial Dimension, DimRadial , DimRadial.ico
+
+MainMenu = Utility
+   SubButton = bhatch, bhatch ,bhatch.ico
+   SubButton = Pline To Mesh, PlineToMesh , 3dPmesh.ico
+   SubButton = -, ,
+   SubButton = Bring To Front, BringToFront,BringToFront.ico
+   SubButton = Send To Back, SendToBack,SendToBack.ico
+   SubButton = -, ,
+   SubButton = Distance, Distance,Dist.ico
+   SubButton = ID,ID,ID.ico
+   SubButton = Area,Area,Area.ico
+   SubButton = -, ,
+   SubButton = Purge,Purge,Purge.ico
+
+
+
+
+//SubButtonMenu = Zoom
+	//SubMenuButton = Zoom All , ZoomA, zoomALL.ico
+	//SubMenuButton = Zoom Extends , ZoomE, zoomE.ico
+	//SubMenuButton = Zoom Previous , ZoomP, zoomP.ico
+	//SubMenuButton = Zoom Window , ZoomW, zoomW.ico
+	//SubMenuButton = Zoom In , ZoomIn , zoomIN.ico
+	//SubMenuButton = Zoom Out , ZoomOut, zoomOUT.ico
+	//SubMenuButton = Pan , Pan,pan.ico
+//SubButtonMenu = UCS
+	//SubMenuButton = UCS World, UCSW,3D_wcs.ico
+	//SubMenuButton = UCS View , UCSV,  3D_ucs.ico
+//SubButtonMenu = Clip
+	//SubMenuButton = Clip Cut , ClipCut , cut.ico
+	//SubMenuButton = Clip Copy , ClipCopy , ClipCopy.ico	
+	//SubMenuButton = Clip Paste , ClipPaste , paste.ico 
+SubButtonMenu = Osnaps
+	SubMenuButton = End , OsnapEnd , SnapEnd.ico
+	SubMenuButton = Cen , OsnapCen , SnapCen.ico
+	SubMenuButton = Mid , OsnapMid , SnapMid.ico
+	SubMenuButton = Ins , OsnapIns , SnapIns.ico
+	SubMenuButton = Perpedicular , OsnapPer , SnapPer.ico
+	SubMenuButton = Nearest , OsnapNea , SnapNear.ico
+	SubMenuButton = Intersect , OsnapInters , SnapInt.ico
+	SubMenuButton = Node , OsnapNode , Point.ico
+	SubMenuButton = Quadratic , OsnapQua , SnapQua.ico
+	SubMenuButton = Tangent , OsnapTan , SnapTar.ico
+	SubMenuButton = ApparentInt , OsnapApparentInt , SnapApaInt.ico
+	SubMenuButton = None , OsnapCancel , SnapCancel.ico
+MainMenu = Insert
+	 SubButton = Write Block , WriteBlock , writeblock.ico 
+	 SubButton = Make Block , MakeBlock , makeblock.ico 
+	 SubButton = Insert Block, Insert , InsertBlock.ico
+	 SubButton = Edit Attribute, EditAttrib ,EditAttrib.ico
+	 SubButton = Add Attribute , AddAttribute ,AddAttrib.ico
+MainMenu = View
+	SubButton = Redraw, Redraw ,Redraw.ico,false
+	SubButton = Regen, Regen ,Regen.ico,false
+	
+	SubButtonMenu = Zoom
+		SubMenuButton = Zoom All , ZoomA, zoomALL.ico
+		SubMenuButton = Zoom Extends , ZoomE, zoomE.ico
+		SubMenuButton = Zoom Previous , ZoomP, zoomP.ico
+		SubMenuButton = Zoom Window , ZoomW, zoomW.ico
+		SubMenuButton = Zoom In , ZoomIn , zoomIN.ico
+		SubMenuButton = Zoom Out , ZoomOut, zoomOUT.ico
+		SubMenuButton = Pan , Pan,pan.ico
+	SubButtonMenu = UCS
+		SubMenuButton = UCS World, UCSW,3D_wcs.ico
+		SubMenuButton = UCS View , UCSV,  3D_ucs.ico
+MainMenu = Edit
+	SubButton = Undo, Undo ,Undo.ico
+	SubButton = Redo, Redo ,Redo.ico
+	//Separator...
+	SubButton = -, ,
+	SubButton = Cut , ClipCut , cut.ico
+	SubButton = Copy , ClipCopy , ClipCopy.ico	
+	SubButton = Paste , ClipPaste , paste.ico 	
+	SubButton = -, ,
+	SubButton = Find , Find , find.ico, true
+MainMenu = General
+	SubButton = General Settings, Properties,Properties.ico,false
+	//SubButton = General Settings, GeneralSettings ,false, false
+MainMenu = File
+	SubButton = New, New ,NewFile.ico
+	SubButton = Open, Open ,OpenFile.ico
+	SubButton = Open Multiple Drawings, OpenMultiDrawings ,false, false
+	SubButton = Save, Save ,SaveFile.ico
+	SubButton = Save As, SaveAs ,SaveAs.ico
+	SubButton = Open DRG Drawing, DRGImport ,HdViewerApp.ico ,false
+	SubButton = Save DRG Drawing, DRGExport ,HdViewerApp.ico ,false
+	SubButton = Close, Close ,false, false
+	SubButton = Print, Print ,printFile.ico
+//Separator...
+	SubButton = -, ,
+	SubButton = Working Directory..., WorkingDir ,false,false
+	SubButton = Draw Model / String, DrawString ,false,false
+	//SubButton = Load Deflection, LoadDeflection ,false,false
+//Separator...
+	SubButton = -, ,
+	SubButtonMenu = Import
+		SubMenuButton = DRG, DRGImport ,HdViewerApp.ico ,false
+	SubButtonMenu = Export
+		SubMenuButton = Image, Export ,ExportToImage.ico,false
+		SubMenuButton = PDF, PDFExport ,acro.ico ,false
+		SubMenuButton = DRG, DRGExport ,HdViewerApp.ico ,false
+//	SubButton = Export To Image, Export ,ExportToImage.ico,false
+//	SubButton = Export To PDF, PDFExport ,acro.ico ,false
+	SubButton = Publish , Publish ,Publish.ico,false
+	SubButton = -, ,
+	//SubButton = Properties, Properties,Properties.ico,false
+	//SubButton = -, ,
+	SubButton = Exit,Exit,Exit.ico, False
+   

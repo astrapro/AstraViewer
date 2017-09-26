@@ -1,0 +1,15 @@
+*Extra Method
+//IF EXIST C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe setwow
+
+
+//IF EXIST C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe set64
+//xcopy "$(TargetPath)" "$(SolutionDir)\vdRes\" /R /Y
+
+
+
+HeadsViewer
+//IF EXIST C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe setwow
+
+//IF EXIST  C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe C:\WINDOWS\Microsoft.NET\Framework64\v2.0.50727\ldr64.exe set64
+//mkdir "$(TargetDir)vdres"
+//xcopy "$(SolutionDir)vdres\*.*"  "$(TargetDir)vdres" /S /E /R /Y

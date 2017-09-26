@@ -1,0 +1,33 @@
+AxisSize:2050
+CrossSize:10
+CursorAxisColor:-1
+CursorPickColor:-1
+CurveResolution:1000
+GridColor:-40121
+GripColor:-16776961
+GripSize:10
+OsnapColor:-256
+OsnapSize:16
+PickSize:10
+ReferenceCrossColor:-1
+RubberBandColor:-1
+SelectingCrossColor:-16744448
+SelectingWindowColor:-16776961
+ShowCursor:True
+TimerBreakForDraw:40
+BackupOnSave:False
+ShowUCSAxis:True
+SupportPath:D:\SOFTWARE DEVELOPMENT\Heads Viewer App\HeadsApp [2009 09 02]\HeadsViewer\bin\x86\Release\vdRes;
+PolarBkColor:-128
+PolarFrameColor:-4144897
+PolarTextColor:-8388480
+PolarFontStyle:[Font: Name=Webdings, Size=15.75, Units=3, GdiCharSet=1, GdiVerticalFont=False]
+ToolBkColor:-65536
+ToolFrameColor:-4144897
+ToolTextColor:-8388480
+ToolFontStyle:[Font: Name=Webdings, Size=15.75, Units=3, GdiCharSet=1, GdiVerticalFont=False]
+EnableToolTips:True
+EnableUrls:True
+BackGround:-16777216
+ForeGround:-1
+PropertiesListSide:Left

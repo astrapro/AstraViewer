@@ -1,0 +1,33 @@
+AxisSize:2050
+CrossSize:10
+CursorAxisColor:-1
+CursorPickColor:-1
+CurveResolution:1000
+GridColor:-40121
+GripColor:-16776961
+GripSize:10
+OsnapColor:-256
+OsnapSize:16
+PickSize:10
+ReferenceCrossColor:-1
+RubberBandColor:-1
+SelectingCrossColor:-16744448
+SelectingWindowColor:-16776961
+ShowCursor:True
+TimerBreakForDraw:40
+BackupOnSave:False
+ShowUCSAxis:True
+SupportPath:D:\SOFTWARE DEVELOPMENT\Heads Viewer App\HeadsApp [2009 09 02]\HeadsViewer\bin\x86\Release\vdRes;D:\SOFTWARE DEVELOPMENT\Heads Viewer App\HeadsApp [2009 09 22]\HeadsViewer\bin\x86\Release\vdRes;D:\SOFTWARE DEVELOPMENT\ASTRA\VIEWER\ASTRA Viewer [2009 10 06]\HeadsViewer\bin\x86\Release\vdRes;E:\Chiranjit\Software Development\ASTRA Pro Code Locked + Unlocked_AASHTO\ASTRA\bin\Debug\vdRes;
+PolarBkColor:-128
+PolarFrameColor:-4144897
+PolarTextColor:-8388480
+PolarFontStyle:[Font: Name=Arial, Size=9, Units=3, GdiCharSet=1, GdiVerticalFont=False]
+ToolBkColor:-64
+ToolFrameColor:-4144897
+ToolTextColor:-8388480
+ToolFontStyle:[Font: Name=Arial, Size=9, Units=3, GdiCharSet=1, GdiVerticalFont=False]
+EnableToolTips:True
+EnableUrls:True
+BackGround:-1
+ForeGround:-16777216
+PropertiesListSide:Left

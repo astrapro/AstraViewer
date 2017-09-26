@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.JointLoad" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAYAgAAAAAAMgMAACAAAAAIAEAAQgAARAAgQAgAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\JointLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.JointLoadCollection" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CGIAAkAAAAAAABCQDAAABAUAAAAAAAAgCBQIAABQIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\JointLoad.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.ASTRADoc" Collapsed="true">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QUAQAAgA4AAAQRAAAREQAAAgAAQAAgIQgGgEAANABIA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\ASTRADoc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.BeamAnalysis" Collapsed="true">
+    <Position X="2" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAEAgAAAAAAACIAAAAAAAAAAAAAAkBAAAAABAIAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\BeamAnalysis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.BeamAnalysisCollection" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGIBAkAAAAAAARAQKAAABgQAQAAAAAAACAAAAABQIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\BeamAnalysis.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.BeamAnalysisCalculator_Test" Collapsed="true">
+    <Position X="3.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkkOEQIgQQAAgNREAgAKoIIAQKLABiAO4EHAA2q+UCM=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\BeamAnalysisCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.CLoadDetails" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAIAQAgAAAABAAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\BeamAnalysisCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.CSpanDetails" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\BeamAnalysisCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.BeamAnalysisCalculator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EoAAIgEAAAgAAAACAyAQQABAAwAGABBAQAAAKAAAABA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\BeamAnalysisCalculator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.Element" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIABJACAASAAgAAAJIAAQAAAAEAACAAAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\Elements.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.ElementCollection" Collapsed="true">
+    <Position X="2" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGIAAkAAAAAAABCQCAAQBAQAAAAAAAAhCAAAAABQIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\Elements.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.Factory" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.JointCoordinate" Collapsed="true">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAACAAAAAAAAAAAAACBAAQAAAAAEA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\JointCoordinate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.JointCoordinateCollection" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGYAAkAAAAAAIBAQSAAABAQAAAAAAAAACAAIAABSIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\JointCoordinate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.MemberIncidence" Collapsed="true">
+    <Position X="2" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAgIAAQCAAAAAAAAAABAAAAAAAAACBAAAAAAEAIA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\MemberIncidence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.MemberIncidenceCollection" Collapsed="true">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGYAAkAAAAAAIBCYCBIABAYBAAAAAAAACIAIAAlQIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\MemberIncidence.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.MemberLoad" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAAAAAAIAAAACAAAAAIAEAIAAAAwAIgABAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\MemberLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.MemberLoadCollection" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UG5gEkIggAECkBCUmBAIBAQFAQCAVgAAGBAECQD0ogI=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\MemberLoad.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.MemberProperty" Collapsed="true">
+    <Position X="2" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAoAAJCKAAAACAQAgggAAAEYAQAAAAAIAwAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\MemberProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.MemberPropertyCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGIAAkAAAAAAABiQCAAIBEQAAAAAAAAACAAAAABQIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\MemberProperty.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.MyList" Collapsed="true">
+    <Position X="2" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAABwAAAAAQAAAAAAAAAAAAQAACAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\MemberProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.NodeDisplacement" Collapsed="true">
+    <Position X="2" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAQFACAIAAAAAAAAAAAAAEAAAAAAQBAAAAEQBAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\PostProcessHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.NodeDisplacementCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AGIAAkAAAAAAABAQCAAABAQAAAAAAAAACAAAAABQIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\PostProcessHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.ForceMoment" Collapsed="true">
+    <Position X="2" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAACAAAAAAAgAAAABAACAAAAAgABAAABAAAAAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\PostProcessHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.BeamForceMoment" Collapsed="true">
+    <Position X="2" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAQAAAAEAAAAAEAIAAAAUAAAABAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\PostProcessHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.BeamForceMomentCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JGIAF0ACgAAAABAQCAAEBARAAAAAACAACAAAAgBQIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\PostProcessHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.Support" Collapsed="true">
+    <Position X="2" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAACAAAAACAAAAABAAAAAEAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\Support.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HEADSNeed.ASTRA.ASTRAClasses.SupportCollection" Collapsed="true">
+    <Position X="2" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGIAAkAAAAAAABCQCAAABAQAAAAAgAAACAIYQABUIAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\Support.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="HEADSNeed.ASTRA.ASTRAClasses.IBeamAnalysisCalculator" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAAAAAAAAAAAAAAAAAQABAAgAGAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\BeamAnalysisCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="HEADSNeed.ASTRA.ASTRAClasses.MemberType" Collapsed="true">
+    <Position X="2" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAQAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>ASTRA\ASTRAClasses\MemberProperty.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
